@@ -7,13 +7,20 @@ import './chp04/Button.css';// 앞으로 만든거 css 적용할 때는 여기 �
 import ConfirmDialog from "./chp04/ConfirmDialog";
 import ConfirmDialogs from "./chp04/ConfirmDialogs";
 import './chp04/ConfrimDialog.css';
+import Clock from "./chp04/Clock";
+import './chp04/Clock.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <ConfirmDialogs />
-  </React.StrictMode>
-);
+
+setInterval(() => {
+    // 괄호 안 내용을 렌더링 시킨다는 의미.
+    root.render(
+        <React.StrictMode>
+            <Clock />
+            <ConfirmDialogs />
+        </React.StrictMode>
+    );
+}, 1000);
 
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
 // 그리고 index.js는 npm start로 실행해야 함.
