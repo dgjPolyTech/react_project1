@@ -7,17 +7,17 @@ button {
 
 .bg-green {
     background-color: #5cb84c;
-    border: #ffff4c;
+    border: 3px solid #ffff4c;
 }
 
 .bg-red
 {
     background-color: #f13583;
-    border: #ffff4c;
+    border: 3px solid #ffff4c;
 }
 
 .bg-blue
 {
     background-color: #3085f4;
-    border: #ffff4c;
+    border: 3px dotted #ffff4c;
 }

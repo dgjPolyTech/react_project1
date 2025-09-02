@@ -3,13 +3,15 @@ import Button from "./Button";
 
 function ConfirmDialog(props) {
     return(
-        <div>
-            <p>내용을 확인한 후 버튼을 눌러주세요.</p>
+        <div className={`div-bg-ivory`}>
+            <p>을 확인한 후 버튼을 눌러주세요.</p>
             <br/>
             <Button color='green'>확인</Button>&nbsp;
             <Button color='blue'>취소</Button>&nbsp;
             <Button color='red'>초기화</Button>
         </div>
+
+
     )
 }
 

@@ -5,18 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Button.css';// 앞으로 만든거 css 적용할 때는 여기 수정
 import ConfirmDialog from "./chp04/ConfirmDialog";
+import ConfirmDialogs from "./chp04/ConfirmDialogs";
+import './chp04/ConfrimDialog.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ConfirmDialog />
+    <ConfirmDialogs />
   </React.StrictMode>
 );
 
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
 // 그리고 index.js는 npm start로 실행해야 함.
 
-// 혹시 npm 관련 실행 안되면,
+// 혹시 npm 관련 실행 안되면, 아래 터미널에서 cmd 키고
+// npm install -> npm start
+// 이렇게 처음 실행하면 생각보다 오래걸림.
+// npm start 실행 > 구성편집 >
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
