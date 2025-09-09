@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+/* chp04 clock */
+/*
 import './chp04/Button.css';// 앞으로 만든거 css 적용할 때는 여기 수정
 import ConfirmDialog from "./chp04/ConfirmDialog";
 import ConfirmDialogs from "./chp04/ConfirmDialogs";
 import './chp04/ConfrimDialog.css';
 import Clock from "./chp04/Clock";
 import './chp04/Clock.css';
+ */
+import BookList from "./chp05/exam02/BookList";
+
+
 import Comment from './chp05/exam01/Comment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +23,7 @@ setInterval(() => {
     // 괄호 안 내용을 렌더링 시킨다는 의미.
     root.render(
         <React.StrictMode>
-            <Comment />
+            <BookList />
         </React.StrictMode>
     );
 }, 1000);
