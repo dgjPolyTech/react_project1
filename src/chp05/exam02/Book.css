@@ -1,22 +1,24 @@
-.wrapper{
+/* Book.css */
+
+.wrapper {
     margin: 8px;
     display: flex;
-    max-width: 350px;
-    flex-direction: column;
+    flex-direction: column; /* 컬럼 방향*/
+    border: 1px solid grey;
     border-radius: 16px;
-    background-color: #d2c8ed;
-    aspect-ratio: 4/3;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
+    aspect-ratio: 4/3; /* 카드의 가로세로 비율을 4:3으로 고정 */
+    box-sizing: border-box; /* 패딩과 보더가 너비/높이에 포함되도록 설정 */
     align-items: center;
+    max-width: 300px;
 }
 
-.image{
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    flex-grow: 1;
+.image {
+    max-width: 200px; /* 이미지의 최대 너비 설정 (예시 값, 필요에 따라 조절) */
+    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
     border-radius: 8px;
     object-fit: cover;
+    margin: 10px;
 }
 
 .contentContainer {
@@ -25,14 +27,14 @@
     flex-direction: column;
 }
 
-.titleText{
+.titleText {
     color: black;
-    font-size:  18px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.authorText{
-    color: #555555;
-    font-size:  14px;
+.authorText {
+    color: grey;
+    font-size: 14px;
     margin-top: 4px;
 }

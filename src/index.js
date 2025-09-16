@@ -12,10 +12,8 @@ import './chp04/ConfrimDialog.css';
 import Clock from "./chp04/Clock";
 import './chp04/Clock.css';
  */
-import BookList from "./chp05/exam02/BookList";
-
-
-import Comment from './chp05/exam01/Comment';
+import CommentList from "./chp05/CommentList";
+import Comment from './chp05/Comment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,7 +21,7 @@ setInterval(() => {
     // 괄호 안 내용을 렌더링 시킨다는 의미.
     root.render(
         <React.StrictMode>
-            <BookList />
+            <CommentList />
         </React.StrictMode>
     );
 }, 1000);
