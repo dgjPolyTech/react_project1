@@ -10,8 +10,8 @@ class Notification extends React.Component{
 
     render(){
         return(
-            <div className={"wrapper"}>
-                <span>{this.props.messageText}</span>
+            <div className={"wrapper1"}>
+                <span className={"messageText"}>{this.props.message}</span>
             </div>
         );
     }
