@@ -16,6 +16,7 @@ import './chp04/Clock.css';
 // import Comment from './chp05/Comment';
 import NotificationList from "./chp06/NotificationList";
 import Counter from "./chp07/exam01/Counter";
+import Accomodate from "./chp07/Accomodate";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,7 +24,7 @@ setInterval(() => {
     // 괄호 안 내용을 렌더링 시킨다는 의미.
     root.render(
         <React.StrictMode>
-            <Counter />
+            <Accomodate />
         </React.StrictMode>
     );
 }, 1000);
