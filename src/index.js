@@ -16,7 +16,14 @@ import './chp04/Clock.css';
 // import Comment from './chp05/Comment';
 import NotificationList from "./chp06/NotificationList";
 import Counter from "./chp07/exam01/Counter";
-import Accomodate from "./chp07/Accomodate";
+// import Accomodate from "./chp07/Accomodate";
+import Toggle from "./chp08/Toggle";
+import Toggle_2 from "./chp08/Toggle_2";
+import Toggle_3 from "./chp08/Toggle_3_NewSyntax";
+import ToggleFunction from "./chp08/ToggleFunction"
+import MyButton_Argument from "./chp08/MyButton_Argument"
+import InputAlert from "./chp08/InputAlert"
+import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -24,7 +31,7 @@ setInterval(() => {
     // 괄호 안 내용을 렌더링 시킨다는 의미.
     root.render(
         <React.StrictMode>
-            <Accomodate />
+            <ConfirmButtonFunction />
         </React.StrictMode>
     );
 }, 1000);
