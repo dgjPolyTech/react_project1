@@ -4,37 +4,56 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 /* chp04 clock */
-/*
+
 import './chp04/Button.css';// 앞으로 만든거 css 적용할 때는 여기 수정
 import ConfirmDialog from "./chp04/ConfirmDialog";
 import ConfirmDialogs from "./chp04/ConfirmDialogs";
 import './chp04/ConfrimDialog.css';
 import Clock from "./chp04/Clock";
 import './chp04/Clock.css';
- */
+
+/* chp05 */
 // import CommentList from "./chp05/CommentList";
 // import Comment from './chp05/Comment';
+
+/* chp06 */
 import NotificationList from "./chp06/NotificationList";
 import Counter from "./chp07/exam01/Counter";
 // import Accomodate from "./chp07/Accomodate";
-import Toggle from "./chp08/Toggle";
-import Toggle_2 from "./chp08/Toggle_2";
-import Toggle_3 from "./chp08/Toggle_3_NewSyntax";
-import ToggleFunction from "./chp08/ToggleFunction"
-import MyButton_Argument from "./chp08/MyButton_Argument"
-import InputAlert from "./chp08/InputAlert"
-import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
+
+// chp08
+// import Toggle from "./chp08/Toggle";
+// import Toggle_2 from "./chp08/Toggle_2";
+// import Toggle_3 from "./chp08/Toggle_3_NewSyntax";
+// import ToggleFunction from "./chp08/ToggleFunction"
+// import MyButton_Argument from "./chp08/MyButton_Argument"
+// import InputAlert from "./chp08/InputAlert"
+// import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
+
+// practice
+import Counter2 from "./practice/counter/Counter2";
+import ConfirmDialogP from "./practice/chp4/ConfirmDialogP";
+import ClockP from "./practice/chp4/ClockP";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// setInterval(() => {
+//     // 괄호 안 내용을 렌더링 시킨다는 의미.
+//     root.render(
+//         <React.StrictMode>
+//             <ConfirmDialogP />
+//         </React.StrictMode>
+//     );
+// }, 1000);
+
 setInterval(() => {
-    // 괄호 안 내용을 렌더링 시킨다는 의미.
-    root.render(
-        <React.StrictMode>
-            <ConfirmButtonFunction />
-        </React.StrictMode>
-    );
-}, 1000);
+        root.render(
+            <React.StrictMode>
+                <Counter />
+            </React.StrictMode>
+        );
+    }
+, 1000)
 
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
 // 그리고 index.js는 npm start로 실행해야 함.
