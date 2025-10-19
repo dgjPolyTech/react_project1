@@ -16,7 +16,7 @@ import './chp04/Clock.css';
 // import Comment from './chp05/Comment';
 import NotificationList from "./chp06/NotificationList";
 import Counter from "./chp07/exam01/Counter";
-// import Accomodate from "./chp07/Accomodate";
+import Accomodate from "./chp07/Accomodate";
 import Toggle from "./chp08/Toggle";
 import Toggle_2 from "./chp08/Toggle_2";
 import Toggle_3 from "./chp08/Toggle_3_NewSyntax";
@@ -27,15 +27,20 @@ import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-setInterval(() => {
-    // 괄호 안 내용을 렌더링 시킨다는 의미.
-    root.render(
-        <React.StrictMode>
-            <ConfirmButtonFunction />
-        </React.StrictMode>
-    );
-}, 1000);
+// setInterval(() => {
+//     // 괄호 안 내용을 렌더링 시킨다는 의미.
+//     root.render(
+//         <React.StrictMode>
+//             <ConfirmButtonFunction />
+//         </React.StrictMode>
+//     );
+// }, 1000);
 
+root.render(
+    <React.StrictMode>
+        <Accomodate />
+    </React.StrictMode>
+);
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
 // 그리고 index.js는 npm start로 실행해야 함.
 
