@@ -49,7 +49,7 @@ class NotificationList extends React.Component {
 
     }
 
-    // 컴포넌트가 언마운트, 즉 실행 종료될 때 아래 함수도 실행됨.
+    // 컴포넌트가 언마운트, 즉 실행 종료될 때 아래 함수도 실행됨...
     componentWillUnmount() {
         if(timer){
             clearInterval(timer);
