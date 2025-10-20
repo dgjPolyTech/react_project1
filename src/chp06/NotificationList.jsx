@@ -26,6 +26,7 @@ class NotificationList extends React.Component {
         }
     }
 
+    // 컴포넌트가 마운트(=컴포넌트가 화면에 렌더링까지 된 후) 한번 실행됨.
     componentDidMount() {
         const {notifications} = this.state;
 
@@ -48,6 +49,7 @@ class NotificationList extends React.Component {
 
     }
 
+    // 컴포넌트가 언마운트, 즉 실행 종료될 때 아래 함수도 실행됨.
     componentWillUnmount() {
         if(timer){
             clearInterval(timer);

@@ -9,6 +9,7 @@ function Counter(){
 
     //var count = 0;
 
+    // 아래 useEffect는
     useEffect(() => {
         document.title = `총 ${count}번 클릭했습니다.`;
         return () => {}
