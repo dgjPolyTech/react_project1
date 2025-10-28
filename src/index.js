@@ -29,9 +29,11 @@ import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
 import AppNumberList from "./chp10/ex1/AppNumberList";
 import StudentAttendance from "./chp10/ex1/StudentAttendance";
 
+// chp10
 import AttendanceCard from "./chp10/ex02/AttendanceCard.jsx";
 import './chp10/ex02/AttendanceCard.css';
 import studentAttendance from "./chp10/ex1/StudentAttendance";
+import ChoosePokemon from "./chp10/ex03/ChoosePokemon";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -46,7 +48,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <AttendanceCard />
+        <ChoosePokemon />
     </React.StrictMode>
 );
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.

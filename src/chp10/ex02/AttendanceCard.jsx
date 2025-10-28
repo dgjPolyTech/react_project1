@@ -75,9 +75,9 @@ function AttendanceCard(){
             <div className={"card-container"}>
                 {
                     students.map((student) => (
-                        <div class={"student-card"}>
-                            <img class={"student-avatar"} src={student.avatar} alt={student.name} className={"student-avatar"}/>
-                            <div class={"student-info"}>
+                        <div className={"student-card"} key={student.id}>
+                            <img className={"student-avatar"} src={student.avatar} alt={student.name} className={"student-avatar"}/>
+                            <div className={"student-info"}>
                                 <h3>{student.name}</h3>
                                 <p>{student.grade} - {student.major}</p>
                             </div>
