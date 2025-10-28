@@ -4,7 +4,7 @@ function InputAlert(){
     //onChange 이벤트 발생 시의 동작을 설정
     // 교수님 정답
     // 훅을 사용
-    // 교수님 피셜 함수평 컴포넌트로 많이 설계하라고 하시는데 구체적으로 알아보기
+    // 교수님 피셜 함수형 컴포넌트로 많이 설계한다 하심.
     const[inputValue, setInputValue] = useState("");
 
     function handleChange(event) {

@@ -6,7 +6,7 @@ function ConfirmButtonFunction(){
     function handleConfirm(){
         setIsConfirmed((prevIsConfirmed) => !prevIsConfirmed)
     }
-
+    
     return(
         <div>
             ConfirmButton Test Function Type

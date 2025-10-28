@@ -6,7 +6,6 @@ function Book(props) {
         <div className={"wrapper"}>
             <img className="image"
                  src={props.coverImage}
-
             />
             <div className={"contentContainer"}>
                 <span className={"titleText"}>{props.title}</span>
