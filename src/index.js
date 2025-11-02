@@ -14,7 +14,6 @@ import './chp04/Clock.css';
  */
 // import CommentList from "./chp05/CommentList";
 // import Comment from './chp05/Comment';
-import BooKList from './chp05/exam02/BookList';
 import NotificationList from "./chp06/NotificationList";
 import Counter from "./chp07/exam01/Counter";
 import Accomodate from "./chp07/Accomodate";
@@ -26,14 +25,11 @@ import MyButton_Argument from "./chp08/MyButton_Argument"
 import InputAlert from "./chp08/InputAlert"
 import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
 
-import AppNumberList from "./chp10/ex1/AppNumberList";
-import StudentAttendance from "./chp10/ex1/StudentAttendance";
-
-// chp10
-import AttendanceCard from "./chp10/ex02/AttendanceCard.jsx";
-import './chp10/ex02/AttendanceCard.css';
-import studentAttendance from "./chp10/ex1/StudentAttendance";
-import ChoosePokemon from "./chp10/ex03/ChoosePokemon";
+//chp10
+import AttendanceCard from "./chp10/ex02/AttendanceCard";
+import Pokedex from "./chp10/ex03/Pokedex";
+import "./chp10/ex02/AttendanceCard.css";
+import "./chp10/ex03/Pokedex.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -48,7 +44,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <ChoosePokemon />
+        <Pokedex />
     </React.StrictMode>
 );
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
