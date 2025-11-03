@@ -50,7 +50,7 @@ function Pokedex(props){
                     pokemons.map((pokemon) => (
                             <div
                                 className={"pokemon-card"} key={pokemon.id}
-                                onMouseEnter={() => setHoveredStory(pokemon.story)}
+                                onMouseEnter={() => setHoveredStory("분류: "+pokemon.info+"\n"+"타입: "+pokemon.type+"\n\n"+pokemon.story)}
                                 onMouseLeave={() => setHoveredStory("원하는 포켓몬 이미지를 선택하세요.")}
                             >
                                 <img className="pokemon-img" src={pokemon.img} alt={pokemon.name}/>
