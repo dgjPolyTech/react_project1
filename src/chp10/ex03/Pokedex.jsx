@@ -54,10 +54,11 @@ function Pokedex(props){
                                 onMouseLeave={() => setHoveredStory("원하는 포켓몬 이미지를 선택하세요.")}
                             >
                                 <img className="pokemon-img" src={pokemon.img} alt={pokemon.name}/>
-                                <div className={"pokemon-info"}>
+                                {/* style은 아래 코드와 같이 style={textAlign: 'center'} 이렇게 줘야한다.*/}
+                                <div className={"pokemon-info"} style={{textAlign: 'center', text: ''}}>
                                     <h3>{pokemon.name}</h3>
-                                    <p>{pokemon.info}</p>
-                                    <p>{pokemon.type}</p>
+                                    {/*<p>{pokemon.info}</p>*/}
+                                    {/*<p>{pokemon.type}</p>*/}
                                 </div>
                             </div>
                         )

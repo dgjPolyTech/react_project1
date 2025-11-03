@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 20px;
 
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .pokemon-list {
@@ -16,12 +16,11 @@
     text-align: center;
     color: #333;
     margin-bottom: 30px;
-    border: 2px solid black;
 }
 
 
 .pokemon-story {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 20px auto;
     padding: 15px;
     border: 2px solid #ddd;
@@ -44,8 +43,14 @@
 
 .pokemon-card {
     max-width: 300px;
-    border: 2px solid black;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
     margin: 30px;
+
+    /* 가운데 정렬 쓸 경우 자주 쓰게 될 속성들 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pokemon-card:hover{
@@ -54,16 +59,16 @@
 
 
 .pokemon-img {
-    width: 100%;
-    height: 200px;
+    width: 85%;
     object-fit: cover;
 }
 
 .pokemon-info {
-    border-top: 2px solid black;
+    /*border-top: 1px solid black;*/
 }
 
 .pokemon-info h3 {
     margin: 0;
     color: #333333;
+    font-size: 1.2em;
 }
