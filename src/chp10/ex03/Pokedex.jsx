@@ -12,7 +12,6 @@ const pokemons = [
         type: "풀/독",
         info: "씨앗 포켓몬",
         img: img1,
-        color: ["green", "violet"],
         story: "태어났을 때부터 등에 식물의 씨앗이 있으며 조금씩 크게 자란다.\n",
     },
     {
@@ -21,7 +20,6 @@ const pokemons = [
         type: "불꽃",
         info: "도롱뇽 포켓몬",
         img: img2,
-        color: "red",
         story: "태어날 때부터 꼬리의 불꽃이 타오르고 있다. 불꽃이 꺼지면 그 생명이 다하고 만다.\n",
     },
     {
@@ -30,7 +28,6 @@ const pokemons = [
         type: "물",
         info: "꼬마 거북 포켓몬",
         img: img3,
-        color: "skyblue",
         story: "기다란 목을 등껍질 속에 감춘 다음 기세 좋게 물대포를 발사한다.",
     },
 ]

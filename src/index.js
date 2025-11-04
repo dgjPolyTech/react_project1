@@ -31,6 +31,10 @@ import Pokedex from "./chp10/ex03/Pokedex";
 import "./chp10/ex02/AttendanceCard.css";
 import "./chp10/ex03/Pokedex.css";
 
+//chp11
+import NameForm from './chp11/ex1/NameForm';
+import FruitSelect from "./chp11/ex2/FruitSelect";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // setInterval(() => {
@@ -44,7 +48,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <Pokedex />
+        <FruitSelect />
     </React.StrictMode>
 );
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
