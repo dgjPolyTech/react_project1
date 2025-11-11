@@ -1,0 +1,105 @@
+/* SignUp.css - 라이트 모드 (코튼 캔디) + 애니메이션 */
+
+/* 1. 기본 애니메이션: 폼이 부드럽게 나타나도록 설정 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    padding-top: 40px;
+}
+
+/* 폼 전체를 감싸는 카드 */
+.signup-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f5;
+
+    /* 2. 폼이 나타나는 애니메이션 적용 */
+    animation: fadeIn 0.8s ease-out forwards; /* 0.8초 동안 부드럽게 나타남 */
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #343a40;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* 모든 입력 필드 (input, select, textarea) 공통 스타일 */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form select,
+.signup-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+
+    /* 3. 색상/그림자 변화를 부드럽게 */
+    transition: all 0.3s ease; /* 0.3초 동안 부드럽게 변화 */
+
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: 1px solid #dee2e6;
+}
+
+/* '관심사' 텍스트 영역 */
+.signup-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* 모든 입력 필드 포커스(클릭) 시 */
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+    outline: none;
+    border-color: #bde0fe;
+    box-shadow: 0 0 0 3px rgba(189, 224, 254, 0.7);
+    background-color: #ffffff;
+}
+
+/* 가입하기 버튼 */
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    /* 4. 버튼 호버/클릭 효과를 부드럽게 */
+    transition: all 0.3s ease-in-out;
+
+    background-color: #bde0fe;
+    color: #343a40;
+    margin-top: 10px;
+}
+
+.signup-form button:hover {
+    background-color: #a0c4ff;
+    transform: scale(1.02); /* 버튼이 살짝 커지는 효과 */
+    box-shadow: 0 4px 15px rgba(189, 224, 254, 0.8);
+}

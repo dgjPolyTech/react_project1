@@ -1,0 +1,76 @@
+/* Reservation.css - 옵션 1: 솜사탕 핑크 */
+
+body {
+    background-color: #1f1f2e; /* 아주 어두운 배경 (유지) */
+}
+
+.reservation-form {
+    max-width: 380px;
+    margin: 40px auto;
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background-color: #3a3a50; /* 어두운 카드 배경 (유지) */
+    color: #f0f0f5;
+    padding: 30px;
+    border-radius: 20px; /* 둥근 모서리 (유지) */
+
+    /* --- 핑크색 그림자 --- */
+    box-shadow: 0 4px 12px rgba(247, 172, 188, 0.1);
+    border: 1px solid #4f4f6e;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.reservation-form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #4f4f6e;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+/* --- 핑크색 포커스 --- */
+.reservation-form input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #f7acbc; /* 핑크색 테두리 효과 */
+}
+
+.reservation-form input[type="checkbox"] {
+    margin-left: 10px;
+    vertical-align: middle;
+    transform: scale(1.2);
+
+    /* --- 핑크색 체크박스 --- */
+    accent-color: #f7acbc;
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 12px;
+
+    /* --- 메인 핑크 버튼 --- */
+    background-color: #f08080; /* 살짝 진한 파스텔 핑크(LightCoral) */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/* --- 핑크색 호버 효과 --- */
+.reservation-form button:hover {
+    background-color: #f7acbc; /* 더 연한 핑크 */
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(240, 128, 128, 0.3);
+}
