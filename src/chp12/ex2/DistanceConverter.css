@@ -1,0 +1,74 @@
+/* 전체 컨테이너 */
+.distance-converter {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* 제목 */
+.distance-converter h1 {
+    text-align: center;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+}
+
+/* 두 입력 필드를 감싸는 그룹 */
+.input-group {
+    display: flex; /* 가로로 정렬 */
+    gap: 16px; /* 두 입력 필드 사이의 간격 */
+}
+
+/*
+  이 부분이 핵심입니다.
+  DistanceInput.js 파일의 최상위 <div>를 선택합니다.
+  (.input-group의 바로 첫 번째 자식 div)
+*/
+.input-group > div {
+    flex: 1; /* 1:1 비율로 공간을 나눠 가짐 */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+}
+
+/* DistanceInput 내부의 <legend> 스타일 */
+.input-group > div > legend {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 8px 0; /* 아래쪽에만 여백 */
+    display: block; /* legend 태그가 div 안에 있으므로 블록 요소로 처리 */
+}
+
+/* DistanceInput 내부의 <input> 스타일 */
+.input-group > div > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 4px 0 0;
+    font-size: 1.5rem;
+    color: #007bff; /* 입력 값 색상 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+/* input의 placeholder 스타일 */
+.input-group > div > input::placeholder {
+    color: #aaa;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* 결과 텍스트 */
+.result-text {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #333;
+}
