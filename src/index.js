@@ -8,6 +8,11 @@ import reportWebVitals from './reportWebVitals';
 //import SignUp from "./chp11/ex3/SignUp";
 import ConfirmBoilVerdict from "./chp12/ex1/ConfirmBoilVerdict";
 
+import Calculator from "./chp12/ex2_1/Calculator";
+
+import WelcomeDialog from "./chp12/ex3/WelcomeDialog";
+import FancyBorder from "./chp12/ex3/FancyBorder";
+
 import DistanceConverter from "./chp12/ex2/DistanceConverter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <DistanceConverter />
+        <WelcomeDialog />
     </React.StrictMode>
 );
 // index.js 실행할 때에는, root.render의 React.StrictMode 사이 위치에 해당하는 컴포넌트 명만 바꿔주면 됨.
